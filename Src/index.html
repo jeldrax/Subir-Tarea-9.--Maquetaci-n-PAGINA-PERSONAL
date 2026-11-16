@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pablo Esteban Paredes Canché — Ingeniero Full-Stack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/movil.css">
+</head>
+<body>
+
+  <!--Encabezado - contenedor superior fijo de navegacion-->
+  <header class="encabezado-sitio">
+    <div class="encabezado-interior contenedor">
+
+      <!--Logotipo-->
+      <div class="logo-encabezado">
+        <img src="assets/img/logo.svg" alt="Logotipo P." class="imagen-logo">
+      </div>
+
+      <!--Menu de navegacion de desktop
+
+      contenedor de enlaces de seccion y pildora dorasa/amarilla con las cinco secciones y aloja el indicador flotante que se desliza -->
+      <nav class="menu-navegacion navegacion-escritorio" aria-label="Navegación principal">
+        <ul class="lista-navegacion" id="listaNavEscritorio">
+
+          <!--Pildora flotante amarilla-->
+          <li class="indicador-nav-activo" id="indicadorNavActivo" aria-hidden="true"></li>
+          <li class="item-navegacion">
+            <a href="#bio" class="enlace-nav activo" data-section="bio">01.BIO</a>
+          </li>
+          <li class="item-navegacion">
+            <a href="#educacion" class="enlace-nav" data-section="educacion">02.EDUCACIÓN</a>
+          </li>
+          <li class="item-navegacion">
+            <a href="#skills" class="enlace-nav" data-section="skills">03.SKILLS</a>
+          </li>
+          <li class="item-navegacion">
+            <a href="#proyectos" class="enlace-nav" data-section="proyectos">04.PROYECTOS</a>
+          </li>
+          <li class="item-navegacion">
+            <a href="#experiencia" class="enlace-nav" data-section="experiencia">05.EXPERIENCIA</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!--Menu desplegable para tablet y movil-->
+      <details class="contenedor-nav-movil" id="contenedorNavMovil">
+        <!--Boton menu movil-->
+        <summary class="alternador-nav-movil" id="alternadorNavMovil" aria-label="Abrir menú de navegación">
+          <span>01.BIO</span>
+          <img src="assets/img/flecha-abajo.svg" alt="" class="flecha-alternador" aria-hidden="true">
+        </summary>
+        <div class="menu-desplegable-movil" id="menuDesplegableMovil">
+          <a href="#bio" class="enlace-nav-movil activo">01.BIO</a>
+          <a href="#educacion" class="enlace-nav-movil">02.EDUCACIÓN</a>
+          <a href="#skills" class="enlace-nav-movil">03.SKILLS</a>
+          <a href="#proyectos" class="enlace-nav-movil">04.PROYECTOS</a>
+          <a href="#experiencia" class="enlace-nav-movil">05.EXPERIENCIA</a>
+        </div>
+      </details>
+
+      <!--Boton de contacto del encabezado-->
+      <a href="#contacto" class="btn-contacto-encabezado">
+        <img src="assets/img/punto-pulso.svg" alt="" class="punto-btn-contacto" aria-hidden="true">
+        <span>Contactar</span>
+        <img src="assets/img/flecha-arriba.svg" alt="" class="flecha-btn-contacto" aria-hidden="true">
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!--contenedor de presentacion principal
+    resumen profesional, botones de accion y retrato principal-->
+    <section id="bio" class="seccion-heroe contenedor">
+      <div class="contenido-heroe">
+        <h1 class="titulo-heroe">
+          <span class="resaltado-ambar">PABLO</span> ESTEBAN<br>
+          <span class="resaltado-ambar">PAREDES</span> CANCHÉ
+        </h1>
+        <p class="descripcion-heroe">
+          Desarrollo de experiencias digitales de alto rendimiento que fusionan ingeniería de software robusta, diseño centrado en el usuario y arquitectura modular de grado de misión.
+        </p>
+
+        <!--Acciones principales/llamada a la accion
+                    BOTONES:
+        -->
+        <div class="acciones-heroe">
+          <!--Boton explorar proyectos-->
+          <a href="#proyectos" class="btn-primario-ambar">
+            <span>Explorar Proyectos</span>
+            <img src="assets/img/flecha-arriba.svg" alt="" class="btn-flecha-arriba" aria-hidden="true">
+          </a>
+          <!--Boton descargar cv-->
+          <a href="../Docs/CV%20de%20MCS%20Resume%20Template%20(Pablo%20Paredes)-1.pdf" target="_blank" rel="noopener noreferrer" class="btn-secundario-contorno">
+            <span>Descargar CV // PDF</span>
+          </a>
+        </div>
+      </div>
+
+      <!--Imagen y moificadores de mi imagen-->
+      <div class="visual-heroe">
+        <div class="envoltorio-brillo-avatar">
+          <img src="assets/img/hero-avatar.png" alt="Pablo Esteban Paredes Canché" class="imagen-avatar">
+        </div>
+      </div>
+    </section>
+
+    <!--Seccion de formacion academica
+    linea de tiempo escalonada-->
+    <section id="educacion" class="seccion contenedor">
+      <h2 class="titulo-seccion">FORMACIÓN ACADÉMICA</h2>
+
+      <div class="contenedor-linea-tiempo">
+
+        <div class="eje-linea-tiempo"></div>
+
+        <!--Primera entrada academica
+
+        muestra la formacion del ITM
+        *con nods amarillo*
+        -->
+        <div class="entrada-linea-tiempo paso-entrada-1">
+          <img src="assets/img/nodo-ambar.svg" alt="" class="nodo-linea-tiempo nodo-ambar" aria-hidden="true">
+          <div class="conector-linea-tiempo conector-ambar" aria-hidden="true"></div>
+          <article class="tarjeta-linea-tiempo tarjeta-ambar">
+            <span class="insignia-tarjeta insignia-ambar">TÍTULO PROFECIONAL</span>
+            <h3 class="titulo-tarjeta">Instituto Tecnológico De Mérida</h3>
+            <p class="subtitulo-tarjeta">Ingeniería en Sistemas computacionales [ ISC ]</p>
+          </article>
+        </div>
+
+        <!--Segunda entrada academica
+        certificacion sql
+        *con nodo azul*-->
+        <div class="entrada-linea-tiempo paso-entrada-2">
+          <img src="assets/img/nodo-azul.svg" alt="" class="nodo-linea-tiempo nodo-azul" aria-hidden="true">
+          <div class="conector-linea-tiempo conector-azul" aria-hidden="true"></div>
+          <article class="tarjeta-linea-tiempo tarjeta-azul">
+            <span class="insignia-tarjeta insignia-azul">FUNDACIÓN ACCENTURE</span>
+            <h3 class="titulo-tarjeta">Fundamentos e Introducción a SQL</h3>
+            <p class="subtitulo-tarjeta">Programa Learning to Earning [ ACCENTURE ]</p>
+          </article>
+        </div>
+
+        <!--Tercera entrada academica
+        certificacion python
+        *con nodo naranja*
+        -->
+        <div class="entrada-linea-tiempo paso-entrada-3">
+          <img src="assets/img/nodo-naranja.svg" alt="" class="nodo-linea-tiempo nodo-naranja" aria-hidden="true">
+          <div class="conector-linea-tiempo conector-naranja" aria-hidden="true"></div>
+          <article class="tarjeta-linea-tiempo tarjeta-naranja">
+            <span class="insignia-tarjeta insignia-naranja">CISCO &amp; OPENEDG</span>
+            <h3 class="titulo-tarjeta">Python Essentials 1</h3>
+            <p class="subtitulo-tarjeta">Cisco Networking Academy &amp; OpenEDG [ ACCENTURE ]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--Seccion habilidades tecnicas
+
+    ======= ORBITA =======
+
+    -->
+    <section id="skills" class="seccion contenedor seccion-habilidades">
+      <h2 class="titulo-seccion texto-centrado">HABILIDADES TÉCNICAS</h2>
+
+      <div class="envoltorio-orbital-habilidades">
+
+        <!--trazado de orbita punteada-->
+        <div class="contenedor-elipse-orbita" aria-hidden="true"></div>
+
+        <!--Conjunto de pildoras de tecnologías domnidas-->
+        <div class="elementos-orbita-habilidades">
+
+          <!--tailwind css-->
+          <div class="pildora-habilidad-orbital">
+            <span class="texto-habilidad">Tailwin CSS</span>
+            <img src="assets/img/tailwind-css-brands-solid-full.svg" alt="Tailwind CSS" class="icono-habilidad icono-tailwind">
+          </div>
+
+          <!--truenas-->
+          <div class="pildora-habilidad-orbital">
+            <span class="texto-habilidad">TureNas</span>
+            <img src="assets/img/truenas.svg" alt="TrueNAS" class="icono-habilidad icono-truenas">
+          </div>
+
+          <!--mysql-->
+          <div class="pildora-habilidad-orbital">
+            <span class="texto-habilidad">MySQL</span>
+            <img src="assets/img/274904_database-icon.svg" alt="MySQL" class="icono-habilidad icono-mysql">
+          </div>
+
+          <!--python-->
+          <div class="pildora-habilidad-orbital">
+            <span class="texto-habilidad">Python</span>
+            <img src="assets/img/python-brands-solid-full.svg" alt="Python" class="icono-habilidad icono-python">
+          </div>
+
+          <!--linux-->
+          <div class="pildora-habilidad-orbital">
+            <span class="texto-habilidad">Linux</span>
+            <img src="assets/img/arch-linux-brands-solid-full.svg" alt="Linux" class="icono-habilidad icono-linux">
+          </div>
+
+          <!--github-->
+          <div class="pildora-habilidad-orbital">
+            <span class="texto-habilidad">Git / Github</span>
+            <img src="assets/img/github-brands-solid-full.svg" alt="Git / GitHub" class="icono-habilidad icono-git">
+          </div>
+
+          <!--laravel-->
+          <div class="pildora-habilidad-orbital">
+            <span class="texto-habilidad">Laravel</span>
+            <img src="assets/img/laravel-brands-solid-full.svg" alt="Laravel" class="icono-habilidad icono-laravel">
+          </div>
+
+          <!--flutter-->
+          <div class="pildora-habilidad-orbital">
+            <span class="texto-habilidad">Flutter</span>
+            <img src="assets/img/flutter-svgrepo-com.svg" alt="Flutter" class="icono-habilidad icono-flutter">
+          </div>
+
+          <!--docker-->
+          <div class="pildora-habilidad-orbital">
+            <span class="texto-habilidad">Docker</span>
+            <img src="assets/img/docker-brands-solid-full.svg" alt="Docker" class="icono-habilidad icono-docker">
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--Seccion de proyectos tecnicos-->
+    <section id="proyectos" class="seccion contenedor">
+      <h2 class="titulo-seccion">PROYECTOS TÉCNICOS PRINCIPALES</h2>
+
+      <div class="rejilla-proyectos">
+
+        <!--web administrativa-->
+        <article class="tarjeta-proyecto">
+          <div class="encabezado-tarjeta-proyecto">
+            <span class="categoria-proyecto cat-ambar">// BACKEND DEVELOPMENT</span>
+            <h3 class="titulo-proyecto">Plataforma Web Integral de Gestión Administrativa</h3>
+          </div>
+          <!--logo swl proyecto-->
+          <div class="visual-proyecto">
+            <img src="assets/img/project-web-admin.png" alt="Plataforma Web Integral de Gestión Administrativa" class="imagen-proyecto">
+          </div>
+          <div class="etiquetas-proyecto">
+            <div class="fila-etiquetas">
+              <span class="etiqueta">Laravel</span>
+              <span class="etiqueta">Livewire</span>
+              <span class="etiqueta">Tailwind CSS</span>
+            </div>
+            <div class="fila-etiquetas">
+              <span class="etiqueta">Spatie RBAC</span>
+              <span class="etiqueta">Fortify</span>
+            </div>
+          </div>
+          <div class="pie-tarjeta-proyecto pie-ambar"></div>
+        </article>
+
+        <!--infraestructura homelab y servidor privado-->
+        <article class="tarjeta-proyecto">
+          <div class="encabezado-tarjeta-proyecto">
+            <span class="categoria-proyecto cat-cian">// DEVOPS &amp; HOMELAB</span>
+            <h3 class="titulo-proyecto">Homelab &amp; Servidor Privado de Almacenamiento &amp; App</h3>
+          </div>
+          <!--logo del homelab-->
+          <div class="visual-proyecto">
+            <img src="assets/img/project-homelab.png" alt="Homelab y Servidor Privado" class="imagen-proyecto">
+          </div>
+          <div class="etiquetas-proyecto">
+            <div class="fila-etiquetas">
+              <span class="etiqueta">TrueNAS SCALE</span>
+              <span class="etiqueta">Docker</span>
+              <span class="etiqueta">Tailscale</span>
+            </div>
+            <div class="fila-etiquetas">
+              <span class="etiqueta">Immich</span>
+              <span class="etiqueta">OpenGym</span>
+            </div>
+          </div>
+          <div class="pie-tarjeta-proyecto pie-cian"></div>
+        </article>
+
+        <!--aplicacion movil multiplataforma-->
+        <article class="tarjeta-proyecto">
+          <div class="encabezado-tarjeta-proyecto">
+            <span class="categoria-proyecto cat-naranja">// MOBILE ARCHITECTURE</span>
+            <h3 class="titulo-proyecto">Aplicación Móvil Multiplataforma Flutter</h3>
+          </div>
+          <!--logo del proyecto flutter-->
+          <div class="visual-proyecto">
+            <img src="assets/img/project-flutter.png" alt="Aplicación Móvil Multiplataforma Flutter" class="imagen-proyecto">
+          </div>
+          <div class="etiquetas-proyecto">
+            <div class="fila-etiquetas">
+              <span class="etiqueta">Flutter</span>
+              <span class="etiqueta">Dart 3</span>
+              <span class="etiqueta">BLoC Pattern</span>
+            </div>
+            <div class="fila-etiquetas">
+              <span class="etiqueta">Clean Arch</span>
+            </div>
+          </div>
+          <div class="pie-tarjeta-proyecto pie-naranja"></div>
+        </article>
+      </div>
+    </section>
+
+    <!--Seccion de historial de campo e investigacion-->
+    <section id="experiencia" class="seccion contenedor">
+      <h2 class="titulo-seccion titulo-alineado-derecha">HISTORIAL DE CAMPO &amp; INVESTIGACIÓN</h2>
+
+      <div class="rejilla-historial">
+
+        <!--Publicacion cientifica
+
+        carta de articulo de investigacion
+        -->
+        <article class="tarjeta-historial tarjeta-publicacion">
+          <div class="insignia-historial">
+            <img src="assets/img/punto-ambar.svg" alt="" class="punto-insignia-ambar" aria-hidden="true">
+            <span class="texto-insignia-ambar">PUBLICACIÓN ARBITRADA</span>
+          </div>
+          <h3 class="fuente-historial">Revista Centro de Graduados ITM</h3>
+          <p class="rol-historial">Coautor de Artículo de Investigación Científica</p>
+
+          <!--boton enlacre al articulo ccientiffico-->
+          <a href="#contacto" class="enlace-articulo-historial">
+            <span>“Sistema de monitoreo remoto del agua basado en TDS y turbidez”</span>
+            <img src="assets/img/enlace.svg" alt="" class="icono-cadena-enlace" aria-hidden="true">
+          </a>
+          <p class="descripcion-historial">
+            Investigación enfocada en la adquisición telemétrica de parámetros de pureza hídrica mediante sensores de turbidez (NTU) y sondas Investigación enfocada en la adquisición telemétrica de parámetros
+          </p>
+        </article>
+
+        <!--Registro de experiencia profesional
+
+        carta de liderazgo tecnico y gestion operativa
+        -->
+        <article class="tarjeta-historial tarjeta-profesional">
+          <div class="insignia-historial">
+            <img src="assets/img/punto-ambar.svg" alt="" class="punto-insignia-ambar" aria-hidden="true">
+            <span class="texto-insignia-ambar">REGISTRO PROFESIONAL</span>
+          </div>
+          <h3 class="fuente-historial">Liderazgo Técnico de Cuadrilla Operativa</h3>
+          <p class="rol-historial">Gestión de Campo e Infraestructura Crítica // Mérida, MX</p>
+          <p class="descripcion-historial">
+            Dirección en sitio de personal operativo para el despliegue, auditoría y aseguramiento de infraestructura de alta exigencia. Gestión de riesgos en tiempo real, supervisión estricta de normativas de seguridad industrial y coordinación de logística
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!--Seccion de comunicaciones-->
+    <section id="contacto" class="seccion contenedor">
+      <h2 class="titulo-seccion">ARREGLO DE COMUNICACIONES</h2>
+
+      <div class="contenedor-tarjeta-contacto">
+
+        <!--canales de contacto-->
+        <div class="panel-info-contacto">
+          <h3 class="titulo-panel-contacto solo-escritorio">Iniciar Transmisión</h3>
+
+          <div class="lista-canales">
+
+            <!--correo-->
+            <div class="item-canal">
+              <span class="etiqueta-canal">[Mail]</span>
+              <div class="cuerpo-canal">
+                <img src="assets/img/mail.svg" alt="" class="icono-canal" aria-hidden="true">
+                <a href="mailto:paredes.pabloe04@gmail.com" class="enlace-canal">paredes.pabloe04@gmail.com</a>
+              </div>
+            </div>
+
+            <!--numero telefonico-->
+            <div class="item-canal">
+              <span class="etiqueta-canal">[Teléfono]</span>
+              <div class="cuerpo-canal">
+                <img src="assets/img/telefono.svg" alt="" class="icono-canal" aria-hidden="true">
+                <a href="tel:+529994395543" class="enlace-canal">+52 999 439 5543</a>
+              </div>
+            </div>
+
+            <!--ubicacion-->
+            <div class="item-canal">
+              <span class="etiqueta-canal">[Locación]</span>
+              <div class="cuerpo-canal">
+                <img src="assets/img/locacion.svg" alt="" class="icono-canal" aria-hidden="true">
+                <span class="texto-canal">Mérida, Yucatán, México</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="graficos-laterales-contacto">
+
+            <!--Ilustracion decorativa para vista tablet/monitor decorativo por que no encontre como rellenar el espacio-->
+            <div class="grafico-estacion-tablet" aria-hidden="true">
+              <img src="assets/img/monitor-tablet.svg" alt="" class="svg-monitor-tablet">
+            </div>
+
+            <!--circulos de redes sociales-->
+            <div class="circulos-sociales">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-circulo-social" aria-label="LinkedIn">
+                <img src="assets/img/linkedin-brands-solid-full.svg" alt="LinkedIn" class="svg-circulo">
+              </a>
+
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-circulo-social" aria-label="GitHub">
+                <img src="assets/img/github-brands-solid-full.svg" alt="GitHub" class="svg-circulo">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!--formulario de contacto-->
+        <div class="panel-formulario-contacto">
+          <form id="contactForm" class="formulario-contacto" action="#" method="POST">
+            <h3 class="titulo-panel-contacto solo-movil">Iniciar Transmisión</h3>
+
+            <div class="fila-dual-formulario">
+              <div class="grupo-formulario">
+                <label for="remitente" class="etiqueta-formulario">[ REMITENTE ]</label>
+                <input type="text" id="remitente" name="remitente" class="control-formulario" placeholder="Tu Nombre o Identificador" required>
+              </div>
+              <div class="grupo-formulario">
+                <label for="email" class="etiqueta-formulario">[ EMAIL ]</label>
+                <input type="email" id="email" name="email" class="control-formulario" placeholder="tu.correo@dominio.com" required>
+              </div>
+            </div>
+
+            <div class="grupo-formulario">
+              <label for="asunto" class="etiqueta-formulario">[ ASUNTO ]</label>
+              <input type="text" id="asunto" name="asunto" class="control-formulario" placeholder="Propuesta de Proyecto / Puesto Full-Stack / Colaboración" required>
+            </div>
+
+            <div class="grupo-formulario">
+              <label for="mensaje" class="etiqueta-formulario">[ MENSAJE ENCRIPTADO ]</label>
+              <textarea id="mensaje" name="mensaje" class="control-formulario area-texto-formulario" rows="4" placeholder="Detalla los requerimientos técnicos, stack necesario o propuesta..." required></textarea>
+            </div>
+
+            <!--boton de transmitir-->
+            <div class="fila-envio-formulario">
+              <button type="submit" class="btn-transmitir-rojo" id="btnTransmitirDesktop">
+                <span>TRANSMITIR MENSAJE</span>
+                <img src="assets/img/flecha-derecha.svg" alt="" class="btn-flecha-derecha" aria-hidden="true">
+                <img src="assets/img/check.svg" alt="" class="btn-icono-check" aria-hidden="true">
+              </button>
+            </div>
+
+            <!--indicador-->
+            <div class="estado-transmision" id="estadoTransmision" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--barra decorativa de colores-->
+  <footer class="barra-inferior-sitio" aria-hidden="true">
+    <div class="segmento-barra barra-azul"></div>
+    <div class="segmento-barra barra-ambar"></div>
+    <div class="segmento-barra barra-roja"></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

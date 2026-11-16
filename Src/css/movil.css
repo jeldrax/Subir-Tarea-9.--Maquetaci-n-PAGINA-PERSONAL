@@ -1,0 +1,356 @@
+/*Adaptacion responsiva para tablet
+
+bloque de estilos para pantallas de hasta 768px
+
+oculta el menu de escritorio para activar el desplegable movil, reduce el escalonado de la linea de tiempo y reorganiza la seccion de contacto*/
+@media (max-width: 768px) {
+
+  .navegacion-escritorio {
+    display: none;
+  }
+
+  .contenedor-nav-movil {
+    display: block;
+  }
+
+  /*Ajuste de columnas del heroe en tablet*/
+  /*Apilado vertical del heroe y botones a ancho completo en movil*/
+  .seccion-heroe {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .envoltorio-brillo-avatar {
+    max-width: 360px;
+  }
+
+  /*Escalera intermedia de la linea de tiempo en tablet*/
+  /*Alineacion recta de la linea de tiempo en movil*/
+  .contenedor-linea-tiempo {
+    padding-left: 40px;
+  }
+
+  .nodo-linea-tiempo {
+    left: calc(-40px + 4.5px);
+  }
+
+  .conector-linea-tiempo {
+    left: calc(-40px + 26.5px);
+    width: calc(40px - 26.5px + var(--desfase-tarjeta, 8px));
+  }
+
+  .paso-entrada-1 { --desfase-tarjeta: 8px; }
+  .paso-entrada-2 { --desfase-tarjeta: 72px; }
+  .paso-entrada-3 { --desfase-tarjeta: 136px; }
+
+  /*Reduccion proporcional de la orbita en tablet*/
+  /*Dimensiones verticales para el carrusel orbital 3d en movil*/
+  .envoltorio-orbital-habilidades {
+    max-width: 700px;
+    height: 240px;
+  }
+
+  .pildora-habilidad-orbital {
+    padding: 5.6px 14.4px;
+    font-size: 12.48px;
+    gap: 7.2px;
+  }
+
+  /*Ajuste compacto de las tres cartas de proyectos en tablet*/
+  /*Una sola columna para cartas de proyectos en movil*/
+  .rejilla-proyectos {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 13.6px;
+  }
+
+  .encabezado-tarjeta-proyecto {
+    padding: 18.4px 18.4px 9.6px;
+  }
+
+  .etiquetas-proyecto {
+    padding: 13.6px 18.4px 18.4px;
+  }
+
+  .titulo-proyecto {
+    font-size: 15.2px;
+  }
+
+  /*Separacion de cartas de historial en tablet*/
+  /*Apilado e inversion de orden de cartas de historial en movil*/
+  .rejilla-historial {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  /*Reorganizacion de contacto en dos paneles separados para tablet
+
+  contenedor vertical con ilustracion de estacion y boton superior
+
+  separa la informacion de contacto y el formulario en dos tarjetas independientes y activa el grafico de monitor junto al boton de envio en la cabecera*/
+  /*Adaptacion vertical del bloque de contacto en movil
+
+  contenedor de paneles apilados y formulario de una columna
+
+  dispone los canales, iconos sociales y campos de formulario en una sola columna con boton de envio de ancho completo*/
+  .contenedor-tarjeta-contacto {
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    box-shadow: none;
+  }
+
+  .panel-info-contacto {
+    background: var(--bg-superficie);
+    border: 1px solid var(--borde-sutil);
+    border-radius: 10px;
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .solo-escritorio {
+    display: none;
+  }
+
+  .graficos-laterales-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .circulos-sociales {
+    flex-direction: column;
+  }
+
+  .grafico-estacion-tablet {
+    display: block;
+  }
+
+  .svg-monitor-tablet {
+    display: block;
+    width: 184px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .panel-formulario-contacto {
+    position: relative;
+    background: var(--bg-superficie);
+    border: 1px solid var(--borde-sutil);
+    border-radius: 10px;
+    padding: 32px;
+  }
+
+  .solo-movil {
+    display: block;
+    margin-bottom: 8px;
+    line-height: 41.6px;
+  }
+
+  .fila-envio-formulario {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    margin-top: 0;
+  }
+}
+
+/*Adaptacion responsiva para movil
+
+bloque de estilos para pantallas de hasta 480px
+
+convierte las rejillas a una sola columna vertical, alinea la linea de tiempo sin escalonado y transforma la orbita en un carrusel vertical*/
+@media (max-width: 480px) {
+  .encabezado-sitio {
+    height: 68px;
+  }
+
+  .seccion {
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .titulo-seccion {
+    font-size: 28px;
+    margin-bottom: 28px;
+  }
+
+  .titulo-alineado-derecha {
+    text-align: left;
+  }
+
+  .seccion-heroe {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .contenido-heroe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titulo-heroe {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .acciones-heroe {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-primario-ambar,
+  .btn-secundario-contorno {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .visual-heroe {
+    order: 2;
+  }
+
+  .envoltorio-brillo-avatar {
+    max-width: 320px;
+  }
+
+  .contenedor-linea-tiempo {
+    padding-left: 32px;
+    gap: 24px;
+  }
+
+  .eje-linea-tiempo {
+    left: 8px;
+  }
+
+  .nodo-linea-tiempo {
+    left: calc(-32px + 0.5px);
+    width: 18px;
+    height: 18px;
+  }
+
+  .conector-linea-tiempo {
+    top: calc(20px + 7.5px);
+    left: calc(-32px + 18.5px);
+    width: calc(32px - 18.5px + var(--desfase-tarjeta, 0px));
+  }
+
+  .paso-entrada-1,
+  .paso-entrada-2,
+  .paso-entrada-3 {
+    --desfase-tarjeta: 0px;
+  }
+
+  .tarjeta-linea-tiempo {
+    padding: 20px;
+  }
+
+  .titulo-tarjeta {
+    font-size: 17.6px;
+  }
+
+  .envoltorio-orbital-habilidades {
+    max-width: 230px;
+    height: 460px;
+    margin: 28px auto 0;
+  }
+
+  .pildora-habilidad-orbital {
+    padding: 6.08px 16px;
+    font-size: 12.48px;
+    gap: 8px;
+
+  }
+
+  .rejilla-proyectos {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .rejilla-historial {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .tarjeta-profesional {
+    order: 1;
+  }
+
+  .tarjeta-publicacion {
+    order: 2;
+  }
+
+  .tarjeta-historial {
+    padding: 24px;
+  }
+
+  .contenedor-tarjeta-contacto {
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .panel-info-contacto {
+    background: var(--bg-superficie);
+    border: 1px solid var(--borde-sutil);
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .graficos-laterales-contacto {
+    display: flex;
+    justify-content: center;
+  }
+
+  .circulos-sociales {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .grafico-estacion-tablet {
+    display: none;
+  }
+
+  .panel-formulario-contacto {
+    background: var(--bg-superficie);
+    border: 1px solid var(--borde-sutil);
+    border-radius: 10px;
+    padding: 24px;
+  }
+
+  .solo-movil {
+    display: block;
+    margin-bottom: 4px;
+    line-height: normal;
+  }
+
+  .fila-dual-formulario {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .fila-envio-formulario {
+    position: static;
+    margin-top: 8px;
+  }
+
+  .btn-transmitir-rojo {
+    width: 100%;
+    justify-content: center;
+  }
+}

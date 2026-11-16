@@ -1,0 +1,37 @@
+<svg width="56" height="48.5" viewBox="-0.5 -0.5 56 48.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Marco exterior (Vector.svg) -->
+  <path d="M52.5249 0.75H2.4749C1.25988 0.75 0.274902 4.33172 0.274902 8.75V38.75C0.274902 43.1683 1.25988 46.75 2.4749 46.75H52.5249C53.7399 46.75 54.7249 43.1683 54.7249 38.75V8.75C54.7249 4.33172 53.7399 0.75 52.5249 0.75Z" fill="#0B131D" stroke="#1E2D3D" stroke-width="1.5"/>
+
+  <!-- Barra superior amarilla (Vector-2.svg) -->
+  <g transform="translate(8, -0.25)">
+    <path d="M23 0H1C0.447715 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2H23C23.5523 2 24 1.55228 24 1C24 0.447715 23.5523 0 23 0Z" fill="#FFB830"/>
+  </g>
+
+  <!-- Cuadro azul interior (Vector-3.svg) -->
+  <g transform="translate(9.5, 10.25)">
+    <path d="M20.5 0.5H4.5C2.29086 0.5 0.5 2.29086 0.5 4.5V20.5C0.5 22.7091 2.29086 24.5 4.5 24.5H20.5C22.7091 24.5 24.5 22.7091 24.5 20.5V4.5C24.5 2.29086 22.7091 0.5 20.5 0.5Z" fill="#122030" stroke="#3A86FF"/>
+  </g>
+
+  <!-- Letra P (Vector-4.svg) -->
+  <g transform="translate(17, 16.75)">
+    <path d="M0 0H6.5C8.4 0 10 1.6 10 3.5C10 5.4 8.4 7 6.5 7H3V12H0V0ZM3 2.5V4.5H6.5C7.1 4.5 7.5 4.1 7.5 3.5C7.5 2.9 7.1 2.5 6.5 2.5H3Z" fill="#3A86FF"/>
+    <mask id="stroke0_42_103" fill="white">
+      <path d="M0 0H6.5C8.4 0 10 1.6 10 3.5C10 5.4 8.4 7 6.5 7H3V12H0V0ZM3 2.5V4.5H6.5C7.1 4.5 7.5 4.1 7.5 3.5C7.5 2.9 7.1 2.5 6.5 2.5H3Z"/>
+    </mask>
+    <path d="M0 0H6.5C8.4 0 10 1.6 10 3.5C10 5.4 8.4 7 6.5 7H3V12H0V0ZM3 2.5V4.5H6.5C7.1 4.5 7.5 4.1 7.5 3.5C7.5 2.9 7.1 2.5 6.5 2.5H3Z" stroke-width="2" stroke="#3A86FF" mask="url(#stroke0_42_103)"/>
+  </g>
+
+  <!-- Punto amarillo con borde azul (Vector-5.svg) -->
+  <g transform="translate(27.5, 28.25)">
+    <path d="M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z" fill="#FFB830"/>
+    <mask id="stroke0_42_104" fill="white">
+      <path d="M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z"/>
+    </mask>
+    <path d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5Z" stroke-width="2" stroke="#3A86FF" mask="url(#stroke0_42_104)"/>
+  </g>
+
+  <!-- Óvalo blanco derecho (Vector-1.svg) -->
+  <g transform="translate(42, 22.75)">
+    <path d="M3 5C4.65685 5 6 3.88071 6 2.5C6 1.11929 4.65685 0 3 0C1.34315 0 0 1.11929 0 2.5C0 3.88071 1.34315 5 3 5Z" fill="white"/>
+  </g>
+</svg>
